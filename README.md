@@ -1,5 +1,6 @@
 # Pokémon Emerald
 
+[1596]
 [![Build Status][travis-badge]][travis]
 
 [travis]: https://travis-ci.org/pret/pokeemerald
