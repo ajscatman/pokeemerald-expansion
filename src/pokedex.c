@@ -2162,12 +2162,8 @@ static void Task_HandleSearchResultsInput(u8 taskId)
         }
         else if (JOY_NEW(B_BUTTON))
         {
-<<<<<<< HEAD
-            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
-=======
             TryDestroyStatBars(); //HGSS_Ui
             BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 0x10, RGB_BLACK);
->>>>>>> 6556d5291b985c9dffaec3d43faee648100aea24
             gTasks[taskId].func = Task_ReturnToPokedexFromSearchResults;
             PlaySE(SE_PC_OFF);
         }
@@ -5365,13 +5361,9 @@ static void Task_LoadSearchMenu(u8 taskId)
         gMain.state++;
         break;
     case 2:
-<<<<<<< HEAD
-        BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
-=======
         BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, RGB_BLACK);
         sPokedexView->statBarsSpriteId = 0xFF;  //HGSS_Ui
         CreateStatBars(&sPokedexView->pokedexList[sPokedexView->selectedPokemon]); //HGSS_Ui
->>>>>>> 6556d5291b985c9dffaec3d43faee648100aea24
         gMain.state++;
         break;
     case 3:
